@@ -1,7 +1,13 @@
 public class Ingredient {
     private String name;
+    private double price;
+    public Ingredient(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
 
     public String getName() {
+
         return name;
     }
 
@@ -17,5 +23,5 @@ public class Ingredient {
         this.price = price;
     }
 
-    private double price;
+
 }

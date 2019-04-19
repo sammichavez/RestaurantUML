@@ -16,7 +16,25 @@ public class Table {
         this.name = name;
     }
 
+    public void addItem(MenuItem m){
+        order[itemCount] = m;
+        itemCount++;
+    }
+    public MenuItem[] getItems(){
 
+    }
+    public double getTotalPrice(){
+         double total = 0;
+         for(int i = 0; i< itemCount; i++){
+             total += order[i].getItemPrice();
+         }
+            return total;
+    }
+    public int getdeterminePrepTime(){
 
+    }
 
+    public String toString() {
+        return super.toString();
+    }
 }
