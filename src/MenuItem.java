@@ -4,11 +4,11 @@ public class MenuItem {
     private int ingredientCount = 0;
     private int prepTime = 0;
 
-    public MenuItem(String name, int ingredientCount, int prepTime, Ingredient[] ingredients) {
+    public MenuItem(String name , int prepTime) {
         this.name = name;
-        this.ingredientCount = ingredientCount;
+
         this.prepTime = prepTime;
-        this.ingredients = ingredients;
+
     }
 
     public Ingredient[] getIngredients() {

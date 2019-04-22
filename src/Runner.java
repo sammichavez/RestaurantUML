@@ -1,5 +1,5 @@
 public class Runner {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Ingredient cheese = new Ingredient("cheese", 3.50);
         Ingredient pasta = new Ingredient("pasta", 2);
@@ -7,7 +7,7 @@ public class Runner {
         Ingredient peppers = new Ingredient("peppers", 1.30);
 
 
-        MenuItem special = new MenuItem("special", 80);
+        MenuItem special = new MenuItem("special", 80 ,4 , 4 );
         MenuItem veggie = new MenuItem("veggie", 90);
         MenuItem plain = new MenuItem("plain", 85);
         Table table1 = new Table("t1");
@@ -35,3 +35,4 @@ public class Runner {
         System.out.println(table1.getTotalPrice());
 
     }
+}

@@ -30,11 +30,18 @@ public class Table {
          }
             return total;
     }
-    public int getdeterminePrepTime(){
-
+    public int determinePrepTime(){
+        int y=0;
+        for(int i=0;i<order.length;i++){
+            if(order[i].getPrepTime()>y){
+                y=order[i].getPrepTime();
+            }
+        }
+        return y;
     }
 
+
     public String toString() {
-        return super.toString();
+        return;
     }
 }
