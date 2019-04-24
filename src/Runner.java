@@ -1,18 +1,19 @@
 public class Runner {
-    public static void main(String[] args) {
 
-        Ingredient cheese = new Ingredient("cheese", 3.50);
+    public static void main(String[] args) {
+        Ingredient  cheese = new Ingredient("cheese", 3.50);
         Ingredient pasta = new Ingredient("pasta", 2);
         Ingredient chicken = new Ingredient("chicken", 5.25);
         Ingredient peppers = new Ingredient("peppers", 1.30);
 
 
-        MenuItem special = new MenuItem("special", 80 ,4 , 4 );
+        MenuItem special = new MenuItem("special", 80  );
         MenuItem veggie = new MenuItem("veggie", 90);
         MenuItem plain = new MenuItem("plain", 85);
-        Table table1 = new Table("t1");
-        Table table2 = new Table("t2");
-
+        MenuItem[] code = {special, special, veggie};
+        Table table1 = new Table("t1" , code);
+        MenuItem[] albinson = {veggie , veggie , veggie, plain , plain};
+        Table table2 = new Table("t2" , albinson);
 
         special.addIngredient(cheese);
         special.addIngredient(pasta);
