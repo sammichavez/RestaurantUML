@@ -7,9 +7,9 @@ public class Runner {
         Ingredient peppers = new Ingredient("peppers", 1.30);
 
 
-        MenuItem special = new MenuItem("special", 80  );
-        MenuItem veggie = new MenuItem("veggie", 90);
-        MenuItem plain = new MenuItem("plain", 85);
+        MenuItem special = new MenuItem("special", 20  );
+        MenuItem veggie = new MenuItem("veggie",  5 );
+        MenuItem plain = new MenuItem("plain", 10);
         MenuItem[] code = {special, special, veggie};
         Table table1 = new Table("t1" , code);
         MenuItem[] albinson = {veggie , veggie , veggie, plain , plain};
@@ -33,7 +33,11 @@ public class Runner {
         table2.addItem(plain);
         table2.addItem(plain);
 
-        System.out.println(table1.getTotalPrice());
+        System.out.println(table1.toString());
+
+        System.out.println(table2.toString());
+
+
 
     }
 }

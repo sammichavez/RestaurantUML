@@ -23,7 +23,7 @@ public class Table {
     }
 
     public MenuItem[] getItems() {
-    return MenuItem[];
+    return order;
     }
 
     public double getTotalPrice() {
@@ -53,8 +53,8 @@ public class Table {
                 x = x + " " + order[i].getName();
             }
         }
-    String b = "Table " + name + " ordered:" + c  + "." + "It will take " + c + " minutes. The total cost will be: "
-            + l + " dollars.";
+    String b = "Table " + name + " ordered:" + itemCount  + "Items" + "." + "It will take " + determinePrepTime() + " minutes. The total cost will be: "
+            + getTotalPrice() + " dollars.";
         return b;
     }
 }
